@@ -4,9 +4,9 @@ import calendar
 import datetime
 
 
-def findDay(date):
-    born = datetime.datetime.strptime(date, '%d %m %Y').weekday()
-    return (calendar.day_name[born])
+def findDay(date):    #Günün tarihini alır
+    born = datetime.datetime.strptime(date, '%d %m %Y').weekday()  # günün yazdırır.
+    return (calendar.day_name[born]) #döngüye tekrar sokar .
 
 
 # Driver program 
